@@ -23,7 +23,7 @@
     background-repeat: no-repeat, repeat;
     background-size: cover;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     @apply text-black sm:text-sm md:text-sm lg:text-base xl:text-base;
   }
   h1,
@@ -37,19 +37,34 @@
   }
 }
 
+@layer components {
+  .btn {
+    @apply p-4 text-sm font-semibold text-black bg-yellow-500 rounded shadow-md border-2 border-yellow-500 md:text-base hover:bg-white hover:text-yellow-500;
+  }
+  .btn2 {
+    @apply p-4 text-sm font-semibold text-white bg-pupc2u rounded shadow-md border-2 border-pupc2u md:text-base hover:bg-white hover:text-pupc2u;
+  }
+  .btn3 {
+    @apply px-8 py-2 text-white bg-pupc2u border-2 border-pupc2u rounded-lg shadow-md hover:text-pupc2u hover:bg-white;
+  }
+  .butang {
+    @apply block w-full py-3 text-white duration-200 border-2 rounded-lg bg-pupc2u hover:text-pupc2u hover:bg-white border-pupc2u;
+  }
+}
+
 @media screen(lg) {
   .bg-hero {
     width: 2000px;
     height: 300px;
     left: 30%;
-    @apply absolute rounded-l-full top-52 bg-softBlue;
+    @apply absolute rounded-l-full top-52 bg-gradient-to-r from-purple-700 to-pC2u hover:bg-gradient-to-r;
   }
 
   .bg-tabs {
     width: 2000px;
     height: 300px;
     right: 60%;
-    @apply absolute rounded-r-full top-60 bg-softBlue;
+    @apply absolute rounded-r-full top-60 bg-gradient-to-l from-purple-700 to-pC2u hover:bg-gradient-to-r;
   }
 }
 
