@@ -13,6 +13,9 @@
 /* Alata Sans */
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
+/* Golos Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,10 +25,10 @@
     scroll-behavior: smooth;
   }
   body {
-    background-image: url();
+    /* background-image: url(); */
     background-repeat: no-repeat, repeat;
     background-size: cover;
-    font-family: "Alata", sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-weight: 400;
     @apply text-black sm:text-base md:text-base lg:text-base xl:text-lg;
   }
@@ -35,8 +38,8 @@
   h4,
   h5,
   h6 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 700;
     @apply font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 }
