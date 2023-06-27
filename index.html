@@ -9,7 +9,7 @@
 
     <title>CoinTech2u Malaysia Robot Trading</title>
   </head>
-  <body class="bg-gradient-to-l from-white to-sky-100 leading-relaxed">
+  <body class="bg-gradient-to-l from-white to-sky-100">
     <!-- Navbar  -->
     <header class="relative">
       <div class="px-4 sm:px-6 md:px-8">
@@ -121,7 +121,7 @@
                 <button
                   id="login"
                   type="button"
-                  class="px-8 py-2 bg-softBlue border-2 border-softBlue font-semibold rounded-lg shadow-md hover:text-softBlue hover:bg-white"
+                  class="px-8 py-2 text-white bg-softBlue border-2 border-softBlue font-semibold rounded-lg shadow-md hover:text-softBlue hover:bg-white"
                 >
                   Login
                 </button>
@@ -175,16 +175,43 @@
 
           <!-- Buttons Container -->
           <div
+            x-data="{dropdownMenu: false}"
             class="flex items-center justify-center w-full space-x-4 lg:justify-start"
           >
-            <a href="https://tinyurl.com/Cointech2uTeamMurasx" class="btn2"
-              >Sign Up CoinTech2u</a
-            >
-            <a
-              href="https://tinyurl.com/reference-binance"
-              class="btn animate-pulse"
-              >Sign Up Binance</a
-            >
+            <a href="https://bit.ly/3HXaRqu" class="btn2">SignUp CoinTech2u</a>
+
+            <button class="btn" @click="dropdownMenu = ! dropdownMenu">
+              SignUp Exchanger
+
+              <div
+                x-show="dropdownMenu"
+                class="absolute left-auto mt-10 rounded-md shadow"
+              >
+                <div class="space-x-3 flex flex-wrap space-y-3">
+                  <a
+                    href="https://bit.ly/41zRMS3"
+                    class="rounded-md bg-[#FCD948] py-3 px-4 mx-auto text-[#100E16] hover:bg-white border-[#FCD948] shadow-md hover:text-[#100E16]"
+                    ><img
+                      src="/app/images/logo-binance.png"
+                      alt="#binance"
+                      class="mr-3 inline w-4 rounded-full"
+                    />
+                    Binance</a
+                  >
+
+                  <a
+                    href="https://bit.ly/3Pw4G0Q"
+                    class="rounded-md bg-[#100E16] py-3 px-4 mx-auto text-[#FFB11A] hover:bg-white border-[#100E16] shadow-md hover:text-[#FFB11A]"
+                    ><img
+                      src="/app/images/logo-bybit.png"
+                      alt="#bybit"
+                      class="mr-3 inline w-4 rounded-full"
+                    />
+                    Bybit</a
+                  >
+                </div>
+              </div>
+            </button>
           </div>
         </div>
 
@@ -258,7 +285,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Robot Trading Automatik</h1>
 
@@ -276,7 +303,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Tidak Perlu Teknikal Analisa</h1>
 
@@ -295,7 +322,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Data Terpisah</h1>
 
@@ -321,7 +348,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Bonus 20% Poin Card</h1>
 
@@ -339,7 +366,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Modal Minimal</h1>
 
@@ -357,7 +384,7 @@
             data-aos-easing="ease-in-sine"
           >
             <section
-              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-black/40"
+              class="mx-5 max-w-md rounded-xl p-5 shadow-2xl h-80 bg-neutral-50/50"
             >
               <h1 class="mb-12">Deposit & Withdraw</h1>
 
@@ -431,11 +458,7 @@
                 Term and condition !!
               </p>
               <div class="mx-auto md:mx-0">
-                <a
-                  href="#"
-                  class="px-6 py-3 mt-4 border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
-                  >More Info</a
-                >
+                <a href="#" class="btn2">More Info</a>
               </div>
             </div>
           </div>
@@ -464,11 +487,7 @@
                 yang direalisasikan (realized return).
               </p>
               <div class="mx-auto md:mx-0">
-                <a
-                  href="#"
-                  class="px-6 py-3 mt-4 border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
-                  >More Info</a
-                >
+                <a href="#" class="btn2">More Info</a>
               </div>
             </div>
           </div>
@@ -495,9 +514,7 @@
                 perjalanan c2u.
               </p>
               <div class="mx-auto md:mx-0">
-                <a
-                  href="https://t.me/cointecheducation"
-                  class="px-6 py-3 mt-4 border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                <a href="https://t.me/cointecheducation" class="btn2"
                   >More Info</a
                 >
               </div>
@@ -929,8 +946,12 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="app/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script>
       AOS.init()
     </script>
